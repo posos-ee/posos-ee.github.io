@@ -18,7 +18,9 @@ function load_newspaper(url) {
 	xhr.onload = function (e) {
 		var data = e.target.responseXML;
 
-		add_article(data.querySelector("post title").innerText);
+		for (var i = 0; i < data.getElementsByTagName("post").length; i++) {
+			add_article(data.getElementsByTagName("post")[i].children[0].innerText);
+		}
 	}
 	
 	xhr.send();
