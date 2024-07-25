@@ -44,15 +44,14 @@ main ul li
 	padding: 16px;
 }
 
-main ul li:active a
+main ul li:hover
 {
-	background: #03A4F9;
-	color: #FFFFFF;
+	background: #4FC3F7;
 }
 
-main ul li:active a:hover, main ul li:hover
+main ul li:hover a
 {
-	background: #AAAAAA;
+	color: #FFFFFF;
 }
 
 main ul li a
