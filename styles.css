@@ -6,6 +6,11 @@
 	user-select: none;
 }
 
+body
+{
+	background: #EEEEEE;
+}
+
 header
 {
 	background: #03A4F9;
@@ -24,12 +29,18 @@ h1, h2,h3, h4, h5, h6
 	border-bottom: 1px solid rgba(0, 0, 0, 0.75);
 }
 
-ul li
+main
+{
+	background: White;
+	flex: 70%;
+}
+
+main ul li
 {
 	padding: 16px;
 }
 
-ul li a
+main ul li a
 {
 	color: #03A4F9;
 	text-decoration: none;
