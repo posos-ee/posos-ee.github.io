@@ -7,7 +7,7 @@ function add_article(title, content, imgs) {
 
 	detail.appendChild(summary);
 
-	document.querySelector("main").appendChild(detail);
+	document.querySelector("main section:first-child").appendChild(detail);
 }
 
 function load_newspaper(url) {
