@@ -7,6 +7,10 @@ function add_article(title, content, imgs) {
 
 	detail.appendChild(summary);
 
+	var text = document.createElement("p");
+
+	text.innerText = content.toString();
+
 	document.querySelector("main section:first-child").appendChild(detail);
 }
 
@@ -19,7 +23,7 @@ function load_newspaper(url) {
 		var data = JSON.parse(e.target.responseText);
 
 		for (var i in data) {
-			add_article(data[i].title);
+			add_article(atob(data[i].title), atob(data[i].content));
 		}
 	}
 	
