@@ -12,6 +12,10 @@ header
 	padding: 80px;
 }
 
+header h1, header h2, header h3, header h4, header h5, header h6
+{
+	border-bottom: none;
+}
 
 h1, h2,h3, h4, h5, h6
 {
