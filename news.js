@@ -3,7 +3,7 @@ function add_article(title, content, imgs) {
 
 	var summary = document.createElement("summary");
 
-	suumary.innerText = title.toString();
+	summary.innerText = title.toString();
 
 	detail.appendChild(summary);
 
