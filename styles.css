@@ -3,6 +3,7 @@
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 	margin: 0;
 	padding: 0;
+	transition: 0.5s all ease-in-out;
 	user-select: none;
 }
 
@@ -55,7 +56,7 @@ main ul li:active a
 
 main ul li:hover
 {
-	background: #949494;
+	background: #AAAAAA;
 }
 
 main ul li a
