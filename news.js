@@ -16,10 +16,10 @@ function load_newspaper(url) {
 	xhr.open("GET", url, false);
 
 	xhr.onload = function (e) {
-		var data = e.target.responseXML;
+		var data = JSON.parse(e.target.responseText);
 
-		for (var i = 0; i < data.getElementsByTagName("post").length; i++) {
-			add_article(data.getElementsByTagName("post")[i].children[0].innerText);
+		for (var i in data) {
+			add_article(data[i].title);
 		}
 	}
 	
