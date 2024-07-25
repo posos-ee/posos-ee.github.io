@@ -1,4 +1,4 @@
-function add_article(title, content, imgs) {
+function add_article(title, content) {
 	var detail = document.createElement("detail");
 
 	var summary = document.createElement("summary");
