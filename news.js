@@ -11,6 +11,8 @@ function add_article(title, content) {
 
 	text.innerText = content.toString();
 
+	detail.appendChild(text);
+
 	document.querySelector("main section:first-child").appendChild(detail);
 }
 
