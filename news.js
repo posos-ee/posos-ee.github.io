@@ -5,7 +5,7 @@ function load_newspaper(url) {
 
 	xhr.onload = function (e) {
 		// Show dialog
-		document.querySelector("main").children[0].children[0].innerText += (e.target.responseText);
+		document.querySelector("main").children[0].children[0].children[0].innerText += (e.target.responseText);
 	}
 	
 	xhr.send();
