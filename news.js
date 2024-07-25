@@ -23,7 +23,7 @@ function load_newspaper(url) {
 		var data = JSON.parse(e.target.responseText);
 
 		for (var i in data) {
-			add_article(atob(data[i].title), atob(data[i].content));
+			add_article(decodeURIComponent(atob(data[i].title)), decodeURIComponent(atob(data[i].content)));
 		}
 	}
 	
