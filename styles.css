@@ -59,3 +59,8 @@ main ul li a
 	color: #03A4F9;
 	text-decoration: none;
 }
+
+section
+{
+	padding: 16px;
+}
